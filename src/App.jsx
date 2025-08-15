@@ -1,33 +1,80 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/App.css';
+import Info from "./components/Info"
+import Education from './components/Education'
+import WorkExperience from './components/WorkExperience'
+import Skills from './components/Skills'
+import Preview from './components/Preview'
+import { useState } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [infodata, setInfoData] = useState(
+    {
+      name:"Ing. John Example",
+      email:"nonexisting@email.com",
+      phone:"900 876 432"
+    })
+  const [educationData, setEducationData] = useState(
+    [{
+      uni: "University of Everything",
+      field: "Science of the Universe",
+      start_date: "September 2018",
+      end_date: "June 2023",
+      location: "Exampletown, Examplia",
+      id: crypto.randomUUID()
+    }
+    ])
+  const [workExperienceData, setWorkExperienceData] = useState(
+    [{
+      company: "Example Solutions Ltd.",
+      position: "Project Manager",
+      start_date: "March 2023",
+      end_date: "August 2025",
+      decr: "Managed example projects from inception to completion, ensuring timely delivery.",
+      location: "Sample City, Testland",
+      id: crypto.randomUUID()
+    }])
+  const [skillsData, setSkillsData] = useState(
+    [{
+      name: "example1",
+      id: crypto.randomUUID()
+    },
+    {
+      name: "example2",
+      id: crypto.randomUUID()
+    },
+    {
+      name: "example3",
+      id: crypto.randomUUID()
+    }]
+  )
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className='editing-panel'>
+      <h1>CV builder</h1>
+      <Info setInfoData={setInfoData}/>
+      <Education
+      setEducationData={setEducationData}
+      educationData={educationData}
+      />
+      <WorkExperience
+      setWorkExperienceData={setWorkExperienceData}
+      workExperienceData={workExperienceData}
+      />
+      <Skills
+      setSkillsData={setSkillsData}
+      skillsData={skillsData}
+      />
+    </div>
+    <div className='preview-panel'>
+      <Preview
+      infodata={infodata}
+      educationData={educationData}
+      workExperienceData={workExperienceData}
+      skillsData={skillsData}
+      />
+      <button>Downolad PDF</button>
+    </div>
     </>
   )
 }

@@ -1,0 +1,50 @@
+.info-panel{
+  margin: 30px 0;
+  padding: 16px;
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.39);
+  /* width: 320px; */
+}
+h2{
+  margin: 16px 0;
+}
+.info-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 2px white;
+}
+.info-heading button{
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  transition: scale 0.2s ease-in;
+}
+.info-heading button:hover{
+  cursor: pointer;
+  scale: 1.1;
+}
+.info-panel form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0 0 0 ;
+}
+.info-panel input{
+  width: 200px;
+}
+.submit-btn{
+  width: 80px;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  transition: scale 0.2s ease-in;
+  background-color: white;
+  color: black;
+}
+.submit-btn:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.39);
+  scale: 1.1;
+}

@@ -1,0 +1,95 @@
+.work-panel{
+  margin: 30px 0;
+  padding: 16px;
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.39);
+}
+h2{
+  margin: 16px 0;
+}
+.work-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 2px white;
+}
+.work-heading button,
+.interaction-btns button{
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+  transition: scale 0.2s ease-in;
+}
+.work-heading button:hover,
+.interaction-btns button:hover{
+  cursor: pointer;
+  scale: 1.2;
+}
+.work-panel form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0 0 0 ;
+}
+.work-panel input,
+textarea{
+  width: 200px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.submit-btn,
+.cancel-btn{
+  width: 110px;
+  margin: 16px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  transition: scale 0.2s ease-in;
+  background-color: white;
+  color: black;
+}
+.cancel-btn{
+  width: 60px;
+}
+.submit-btn:hover,
+.cancel-btn:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.39);
+  scale: 1.2;
+}
+.work-overview{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+  color: rgba(255, 255, 255, 0.60);
+}
+.work-overview-info{
+  flex: 1;
+}
+.work-overview-info p:first-child{
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.863);
+}
+.work-overview-info p{
+  font-size: 0.9rem;
+}
+.interaction-btns{
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.interaction-btns button{
+  width: 22px;
+  height: 22px;
+}
+.interaction-btns button svg path{
+  fill: rgba(255, 255, 255, 0.60);
+}
+.interaction-btns .delete-work-btn svg path{
+  fill: rgba(173, 26, 70, 0.5);
+}
+.interaction-btns .edit-work-btn{
+  width: 18px;
+  height: 18px;
+}

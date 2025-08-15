@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(27, 27, 27);
+  color: white;
+  padding: 32px;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+#root{
+  width: 100%;
+  height: 100%;
+  display: inline-grid;
+  grid-template-columns: minmax(280px, 400px) minmax(600px, 900px);
+  gap: 32px;
+}
+h1{
+  color: rgb(173, 26, 70);
+  font-size: 3rem;
+}
+.editing-panel{
+  align-items: center;
+  /* background-color: rgba(29, 14, 43, 0.87); */
+}
+.preview-panel{
+  /* background-color: rgb(19, 54, 54); */
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.preview-panel button{
+  width: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  transition: scale 0.2s ease-in;
+  background-color: rgb(173, 26, 70);
+  color: white;
+}
+.preview-panel button:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.39);
+  scale: 1.1;
+}

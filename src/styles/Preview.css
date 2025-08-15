@@ -1,0 +1,56 @@
+.cv-preview{
+  width: 556px;
+  height: 786px;
+  background-color: rgba(255, 255, 255, 0.966);
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.39);
+}
+.header{
+  padding: 32px;
+  background-color: rgba(0, 0, 0, 0.935);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.header .name{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.main-content{
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.preview{
+  /* background-color: rgb(113, 154, 190); */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+h3{
+  border-bottom: solid 2px rgb(173, 26, 70);
+  color: rgb(173, 26, 70);;
+}
+.location{
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.descr{
+  font-size: 0.8rem;
+}
+.duration{
+  font-size: 0.9rem;
+}
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.skill{
+  background-color: rgb(173, 26, 70);
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+}
