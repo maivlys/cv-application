@@ -73,7 +73,7 @@ function App() {
       workExperienceData={workExperienceData}
       skillsData={skillsData}
       />
-      <button>Downolad PDF</button>
+      <button className='downloadPdf'>Download PDF</button>
     </div>
     </>
   )

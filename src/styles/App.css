@@ -19,7 +19,11 @@ body{
   height: 100%;
 }
 h1{
-  color: rgb(173, 26, 70);
+  background: linear-gradient(45deg, #29F39B, #02A1F9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   font-size: 3rem;
 }
 .editing-panel{
@@ -32,16 +36,19 @@ h1{
   align-items: center;
   gap: 32px;
 }
-.preview-panel button{
-  width: 120px;
-  padding: 12px;
+.preview-panel .downloadPdf{
+  width: 140px;
+  padding: 16px;
   border-radius: 10px;
   border: none;
   transition: scale 0.2s ease-in;
-  background-color: rgb(173, 26, 70);
+  background: linear-gradient(45deg, #29F39B, #02A1F9);
   color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
 }
-.preview-panel button:hover{
+.preview-panel .downloadPdf:hover{
   cursor: pointer;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.39);
   scale: 1.1;

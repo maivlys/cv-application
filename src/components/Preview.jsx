@@ -29,7 +29,7 @@ export default function Preview({infodata, educationData, workExperienceData, sk
               <h4>{item.position}</h4>
               <p>{item.company}</p>
               <p className='duration'>{item.start_date} - {item.end_date}</p>
-              <p className='descr'>Description: {item.decr}</p>
+              <p className='descr'>Description: {item.descr}</p>
               <p className='location'>{item.location}</p>
             </div>
           )}

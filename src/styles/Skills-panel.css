@@ -81,11 +81,11 @@ h2{
   width: 22px;
   height: 22px;
 }
-.interaction-btns button svg path{
-  fill: rgba(255, 255, 255, 0.60);
+.interaction-btns .edit-skill-btn svg path{
+  fill: rgb(255, 255, 255);
 }
 .interaction-btns .delete-skill-btn svg path{
-  fill: rgba(173, 26, 70, 0.5);
+  fill: rgba(255, 255, 255, 0.5);
 }
 .interaction-btns .edit-edu-btn{
   width: 18px;

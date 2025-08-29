@@ -35,7 +35,15 @@ export default function WorkExperience({setWorkExperienceData, workExperienceDat
               ?
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path fill="#ffffff" d="M96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320z"/></svg>
               :
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#ffffff" d="M256 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 160-160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l160 0 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-160z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <defs>
+                  <linearGradient id="gradEdit" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#29F39B" />
+                    <stop offset="100%" stop-color="#02A1F9" />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#gradEdit)" d="M256 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 160-160 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l160 0 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160 160 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-160 0 0-160z"/>
+              </svg>
             }
         </button>
       </div>
