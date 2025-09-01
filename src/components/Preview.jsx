@@ -4,7 +4,10 @@ import '../styles/Preview.css'
 export default function Preview({infodata, educationData, workExperienceData, skillsData}) {
   return (
     <>
-    <div className="cv-preview">
+    <div
+    className="cv-preview"
+    id="pdfToDownload"
+    >
       <div className='header'>
         <p className='name'>{infodata.name}</p>
         <p>{infodata.email}</p>

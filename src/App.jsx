@@ -4,7 +4,6 @@ import Education from './components/Education'
 import WorkExperience from './components/WorkExperience'
 import Skills from './components/Skills'
 import Preview from './components/Preview'
-import PreviewPDF from './components/PreviewPDF'
 import { useState } from 'react';
 import html2pdf from "html2pdf.js"
 
