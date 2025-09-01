@@ -1,8 +1,6 @@
 .cv-preview{
-  /* width: 794px;
-  height: 1123px; */
-  width: 210mm;
-  height: 297mm;
+  width: 794px;
+  height: 1122px;
   background-color: rgba(255, 255, 255, 0.966);
   color: #000000cc;
   box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.39);
