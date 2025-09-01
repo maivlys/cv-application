@@ -51,10 +51,7 @@ function App() {
 
   function handleClick() {
     let element = document.getElementById("pdfToDownload")
-    console.log(element);
-
     html2pdf(element);
-    console.log("here")
   }
 
   return (
