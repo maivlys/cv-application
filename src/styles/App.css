@@ -29,6 +29,7 @@ h1{
 .editing-panel{
   align-items: center;
 }
+
 .preview-panel{
   justify-items: center;
   display: flex;
@@ -36,7 +37,7 @@ h1{
   align-items: center;
   gap: 32px;
 }
-.preview-panel .downloadPdf{
+.editing-panel .downloadPdf{
   width: 140px;
   padding: 16px;
   border-radius: 10px;
@@ -47,9 +48,12 @@ h1{
   font-weight: bold;
   font-size: 1rem;
   font-family: 'Times New Roman', Times, serif;
+  float: right;
 }
-.preview-panel .downloadPdf:hover{
+.editing-panel .downloadPdf:hover{
   cursor: pointer;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.39);
   scale: 1.1;
 }
+
+@layer base { img {display: initial;}}

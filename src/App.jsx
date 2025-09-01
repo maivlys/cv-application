@@ -4,7 +4,9 @@ import Education from './components/Education'
 import WorkExperience from './components/WorkExperience'
 import Skills from './components/Skills'
 import Preview from './components/Preview'
+import PreviewPDF from './components/PreviewPDF'
 import { useState } from 'react';
+import html2pdf from "html2pdf.js"
 
 function App() {
   const [infodata, setInfoData] = useState(
@@ -48,6 +50,14 @@ function App() {
     }]
   )
 
+  function handleClick() {
+    let element = document.getElementById("pdfToDownload")
+    console.log(element);
+
+    html2pdf(element);
+    console.log("here")
+  }
+
   return (
     <>
     <div className='editing-panel'>
@@ -65,6 +75,10 @@ function App() {
       setSkillsData={setSkillsData}
       skillsData={skillsData}
       />
+      <button
+      className='downloadPdf'
+      onClick={handleClick}
+      >Download PDF</button>
     </div>
     <div className='preview-panel'>
       <Preview
@@ -73,7 +87,6 @@ function App() {
       workExperienceData={workExperienceData}
       skillsData={skillsData}
       />
-      <button className='downloadPdf'>Download PDF</button>
     </div>
     </>
   )
